@@ -21,7 +21,11 @@ const forwardFunction = () => {
     document.querySelector('#answer-2').innerText = somethingAnswerTwo[startIndex];
     document.querySelector('#answer-3').innerText = somethingAnswerThree[startIndex];
     document.querySelector('#answer-4').innerText = somethingAnswerFour[startIndex];
-    answers[startIndex];  
+    answers[startIndex];
+    //
+    if (startIndex === 4) {
+        alert('Game Over. You got ' + score + ' question(s) correct.');  
+    } 
 };       
  
 //checks the answer; a correct answer is assigned a green background; a false answer a red background

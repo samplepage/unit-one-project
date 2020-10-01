@@ -1,0 +1,33 @@
+.answers {
+    display: inline-block;
+}
+.column {
+    display: inline-block;
+}
+#question {
+    height: 40px;
+    width: 300px;
+    border: 1px solid black;
+}
+.answer-cell {
+    height: 40px;
+    width: 300px;
+    border: 1px solid black;
+    line-height: 40px;
+    cursor: pointer; 
+}  
+#container {
+      text-align: center;
+} 
+.background-false {
+    background-color: red;
+}
+.background-correct {
+    background-color: green;
+} 
+#nextButton {
+    cursor: pointer; 
+}
+#keepScore {
+    text-align: center;
+}

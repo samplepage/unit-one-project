@@ -24,7 +24,13 @@ const forwardFunction = () => {
     answers[startIndex];
     //
     if (startIndex === 4) {
-        alert('Game Over. You got ' + score + ' question(s) correct.');  
+        alert('Game Over. You got ' + score + ' question(s) correct.');
+        document.querySelector('#question').style.display = 'none';
+        document.querySelector('#answer-1').style.display = 'none';
+        document.querySelector('#answer-2').style.display = 'none';
+        document.querySelector('#answer-3').style.display = 'none';
+        document.querySelector('#answer-4').style.display = 'none';
+        buttonValue.style.display = 'none';
     } 
 };       
  

@@ -1,5 +1,5 @@
 const somethingQuestion = ['What is Neil Young best known for?', 'When is the Harvest Moon', 'In 1992, Young released an album. What is the name of the album?', 'What annual event did Young create in collaboration with Willie Nelson?'];
-const somethingAnswerOne = ['Engineering', 'Any full moon during suumer', 'Filler', 'Band Aid'];
+const somethingAnswerOne = ['Engineering', 'Any full moon during summer', 'Filler', 'Band Aid'];
 const somethingAnswerTwo = ['Painting  ', 'The first full moon of the autumnal equinox', 'Harvest', 'The Great Went'];
 const somethingAnswerThree = ['Music', 'The first full moon in November', 'Neil Young', 'Farm Aid'];
 const somethingAnswerFour = ['Acting', 'April', 'Harvest Moon', 'The Clifford Ball'];

@@ -1,9 +1,9 @@
-const somethingQuestion = ['Who is Neil Young?', 'When is the Harvest Moon', 'In 1992, Young released an album. What is the name of the album?', 'What annual event did Young create in collaboration with Willie Nelson?'];
-const somethingAnswerOne = ['fillerA1', 'A Poet', 'fillerA3', 'fillerA4'];
-const somethingAnswerTwo = ['fillerB1', 'The first full moon of the autumnal equinox', 'fillerB3', 'fillerB4'];
-const somethingAnswerThree = ['A Musician', 'A Musician', 'A Poet', 'Farm Aid'];
-const somethingAnswerFour = ['An Object', 'Random Answer', 'Harvest Moon', 'fillerA4'];
-const answers = ['A Musician', 'The first full moon of the autumnal equinox', 'Harvest Moon', 'Farm Aid'];
+const somethingQuestion = ['What is Neil Young best known for?', 'When is the Harvest Moon', 'In 1992, Young released an album. What is the name of the album?', 'What annual event did Young create in collaboration with Willie Nelson?'];
+const somethingAnswerOne = ['Engineering', 'Any full moon during suumer', 'Filler', 'Band Aid'];
+const somethingAnswerTwo = ['Painting  ', 'The first full moon of the autumnal equinox', 'Harvest', 'The Great Went'];
+const somethingAnswerThree = ['Music', 'The first full moon in November', 'Neil Young', 'Farm Aid'];
+const somethingAnswerFour = ['Acting', 'April', 'Harvest Moon', 'The Clifford Ball'];
+const answers = ['Music', 'The first full moon of the autumnal equinox', 'Harvest Moon', 'Farm Aid'];
 
 let buttonValue = document.querySelector('#nextButton');
 let score = 0;
@@ -50,10 +50,21 @@ const answer = (e) => {
             score++;
         } else {
             e.target.classList.add('background-false');
-        }
+        }   
+        if (somethingAnswerOne[startIndex] === answers[startIndex]) {
+            document.querySelector('#answer-1').classList.add('background-correct');
+          } else if (somethingAnswerTwo[startIndex] === answers[startIndex]) {
+            document.querySelector('#answer-2').classList.add('background-correct');
+          } else if (somethingAnswerThree[startIndex] === answers[startIndex]) {
+            document.querySelector('#answer-3').classList.add('background-correct');
+          } else if (somethingAnswerFour[startIndex] === answers[startIndex]) { 
+            document.querySelector('#answer-4').classList.add('background-correct');
+          } else {
+            console.log('error');
+          } 
     startIndex++;
-    document.querySelector('#aSpan').innerHTML = score;
-   };      
+    document.querySelector('#aSpan').innerHTML = score; 
+   };         
 
 //clears the answer cells for the next question
 const clearFunction = () => {
